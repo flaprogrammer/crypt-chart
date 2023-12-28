@@ -1,0 +1,45 @@
+.marketListPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 100%;
+}
+
+.marketName {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.marketListSearch {
+  font-family: "Lato", sans-serif;
+  padding: 3px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tableContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.priceChangePositive {
+  color: rgb(3, 166, 146);
+}
+.priceChangeNegative {
+  color: rgb(230, 44, 80);
+}
+
+@media screen and (max-width: 768px) {
+  .marketListPage {
+    padding: 10px;
+  }
+  .marketIcon {
+    display: none;
+  }
+  .tableContainer {
+    font-size: 12px;
+  }
+}
